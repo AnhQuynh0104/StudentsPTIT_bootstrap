@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Theme PTIT Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/page.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">
+          <img class="img-thumbnail thumbnail-logo" src="../src/images/logo.png" />
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">GIỚI THIỆU</a></li>
+        <li><a href="#list">DANH SÁCH SINH VIÊN</a></li>
+        <li><a href="#price">HỌC PHÍ</a></li>
+        <li><a href="#students">TIÊU BIỂU</a></li>
+        <li><a href="#ktx">KÝ TÚC XÁ</a></li>
+        <li><a href="#contact">LIÊN HỆ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Sinh viên PTIT</h1> 
+  <p>Tự hào là sinh viên Học viện Công nghệ Bưu chính Viễn thông</p> 
+  <form>
+    <div class="input-group" style="width: 450px; margin: 0 auto ;">
+      <input type="email" class="form-control"  placeholder="Địa chỉ email" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Theo dõi</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Giới thiệu về PTIT</h2><br>
+      <p>Với vị thế là đơn vị đào tạo, nghiên cứu trọng điểm, chủ lực của Ngành thông tin và truyền thông  Việt Nam, là trường đại học trọng điểm quốc gia trong lĩnh vực ICT, những thành tựu trong gắn kết giữa Nghiên cứu – Đào tạo – Sản xuất kinh doanh năng lực, quy mô phát triển của Học viện hôm nay, Học viện sẽ có những đóng góp hiệu quả phục vụ sự phát triển chung của Ngành Thông tin và truyền thông và sự nghiệp xây dựng, bảo vệ tổ quốc, góp phần để đất nước, để Ngành Thông tin và truyền thông Việt Nam có sự tự chủ, độc lập về khoa học công nghệ và nguồn nhân lực, qua đó tự tin cạnh tranh với các đối thủ lớn và sánh vai với các cường quốc trên thế giới</p>
+      <br><button class="btn btn-default btn-lg">Liên hệ chúng tôi</button>
+    </div>
+    <div class="col-sm-4">
+      <img src="../src/images/hocvienHQV.jpg" style="width: 100%"/>
+    </div>
+  </div>
+</div>
+
+<div id="list" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="text-center">
+      <h2>Danh sách sinh viên</h2>
+    </div>
+    <table class="table table-students">
+      <thead>
+        <tr>
+          <th scope="col">STT</th>
+          <th scope="col">Họ tên</th>
+          <th scope="col">MSV</th>
+          <th scope="col">Lớp</th>
+          <th scope="col">GPA</th>
+        </tr>
+      </thead>
+      <tbody id="table-students">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div id="price" class="container-fluid">
+  <h2 class="text-center">Học phí</h2>
+  <h4 class="text-center">Học kỳ 1 - Năm học 2021-2022</h4>
+  <br>
+  <table class="table table-price">
+    <thead>
+      <tr>
+        <th scope="col">STT</th>
+        <th scope="col">Mã môn học</th>
+        <th scope="col">Tên môn học</th>
+        <th scope="col">Số tín chỉ</th>
+        <th scope="col">Học phí</th>
+      </tr>
+    </thead>
+    <tbody id="table-price">
+  </table>
+    <p><strong>Tổng số tín chỉ</strong>:	16</p>
+    <p><strong>Tổng số tín chỉ học phí</strong>:	16</p>
+    <Tổng><strong>Tổng số tiền học phí hoc kỳ là</strong>:	7.680.000 VNĐ  </p>    
+  
+</div>
+
+
+<div id="students" class="container-fluid text-center bg-grey">
+  <h2>SINH VIÊN TIÊU BIỂU</h2><br>
+  <h4>Những gương mặt đáng nhớ</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="../src/images/SV-Quang-Minh1.jpg" alt="sv" width="400" height="300">
+        <p><strong>Vũ Quang Minh</strong></p>
+        <p>Thủ khoa đầu ra khóa D13</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="../src/images/thukhoa1.jpg" alt="sv" width="400" height="300">
+        <p><strong>Lê Công Đức</strong></p>
+        <p>Sinh viên 2 lần thủ khoa</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="../src/images/le-duy-bach.jpg" alt="sv" width="400" height="300">
+        <p><strong>Lê Duy Bách</strong></p>
+        <p>Thí sinh Siêu trí tuệ Việt Nam</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>Sinh viên nói gì về trường</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Được học PTIT là vinh dự của em"<br><span>Nguyễn Quỳnh Anh, Sinh viên năm 4</span></h4>
+      </div>
+      <div class="item">
+        <h4>"PTIT đem lại cho em cả kiến thức lẫn kinh nghiệm trong cuộc sống"<br><span>Kim Vân Anh, Sinh viên năm 4</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Em kết thêm được nhiều bạn mới khi tham gia các câu lạc bộ của PTIT"<br><span>Đào Văn Thái, Sinh viên năm 4</span></h4>
+      </div>
+    </div>
+
+    
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<div id="ktx" class="container-fluid">
+  <div class="text-center">
+    <h2>Ký túc xá</h2>
+    <h4>Đăng ký ký túc xá của trường</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>KTX B1</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>4</strong> người/phòng</p>
+          <p>Đầy đủ nóng lạnh, điều hòa</p>
+          <p>Ngay trong khuôn viên trường</p>
+        </div>
+        <div class="panel-footer">
+          <h3>1.500.000 VNĐ</h3>
+          <h4>/tháng</h4>
+          <button class="btn btn-lg">Đăng ký</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>KTX B5</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>8</strong> người/phòng</p>
+          <p>Không gian ấm cúng</p>
+          <p>Ngay trong khuôn viên trường</p>
+        </div>
+        <div class="panel-footer">
+          <h3>850.000 VND</h3>
+          <h4>/kỳ</h4>
+          <button class="btn btn-lg">Đăng ký</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>KTX B2</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>8</strong> người/phòng</p>
+          <p>Không gian ấm cúng</p>
+          <p>Nằm ngoài khuôn viên trường</p>
+        </div>
+        <div class="panel-footer">
+          <h3>850.000 VND</h3>
+          <h4>/kỳ</h4>
+          <button class="btn btn-lg">Đăng ký</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">LIÊN HỆ</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Liên hệ chúng tôi và bạn sẽ nhận được phản hồi trong vòng 24h tới</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Km10, Đường Nguyễn Trãi, Q.Hà Đông, Hà Nội</p>
+      <p><span class="glyphicon glyphicon-phone"></span>  024 3352 5739</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> support@ptit.edu.vn</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Họ tên" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Bình luận" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Gửi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<img src="../src/images/ptit_2019_1.jpg" style="width: 100%; height: 100vh; ">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    <span>Về đầu trang</span>
+  </a>
+</footer>
+
+<script src="../js/page.js">
+</script>
+</body>
+</html>
